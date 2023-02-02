@@ -118,9 +118,32 @@ jsonschema.Reflect(&TestUser{})
             }
           ]
         },
+        "ipAddress2": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ipv4"
+            },
+            {
+              "$ref": "#/$defs/ipv6"
+            }
+          ]
+        },
         "ipAddresses": {
           "items": {
             "oneOf": [
+              {
+                "$ref": "#/$defs/ipv4"
+              },
+              {
+                "$ref": "#/$defs/ipv6"
+              }
+            ]
+          },
+          "type": "array"
+        },
+        "ipAddresses2": {
+          "items": {
+            "anyOf": [
               {
                 "$ref": "#/$defs/ipv4"
               },
