@@ -445,9 +445,6 @@ func (r *Reflector) reflectSchemaExtend(definitions Definitions, t reflect.Type,
 }
 
 func (r *Reflector) reflectSliceOrArray(definitions Definitions, t reflect.Type, st *Schema) {
-	// if t == rawMessageType {
-	// 	return
-	// }
 
 	r.addDefinition(definitions, t, st)
 
