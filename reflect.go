@@ -288,9 +288,6 @@ var (
 // Byte slices will be encoded as base64
 var byteSliceType = reflect.TypeOf([]byte(nil))
 
-// Except for json.RawMessage
-var rawMessageType = reflect.TypeOf(json.RawMessage{})
-
 // Go code generated from protobuf enum types should fulfil this interface.
 type protoEnum interface {
 	EnumDescriptor() ([]byte, []int)
