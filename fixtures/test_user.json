@@ -7,6 +7,10 @@
       "type": "string",
       "contentEncoding": "base64"
     },
+    "RawMessage": {
+      "type": "string",
+      "contentEncoding": "base64"
+    },
     "GrandfatherType": {
       "properties": {
         "family_name": {
@@ -204,7 +208,9 @@
           "type": "array"
         },
         "anything": true,
-        "raw": true
+        "raw": {
+          "$ref": "#/$defs/RawMessage"
+        }
       },
       "additionalProperties": false,
       "type": "object",

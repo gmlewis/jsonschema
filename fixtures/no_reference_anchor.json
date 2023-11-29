@@ -194,7 +194,10 @@
       "type": "array"
     },
     "anything": true,
-    "raw": true
+    "raw": {
+      "type": "string",
+      "contentEncoding": "base64"
+    }
   },
   "additionalProperties": false,
   "type": "object",
